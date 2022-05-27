@@ -22,15 +22,19 @@
         "acerte" => "primier",
         "arepa" => "doña pepita",
     ];
-    echo "<ol>";
+  
     #recorrer los arreglos asociativos 
     foreach($productos as $marca ){
         echo "marcas : ". $marca . "<br>";
-        foreach($marca as $mar ){
-            echo "<li>". $mar ."</li>";
-        }
+        
     }
+    //metodo get
+    $nombre = $_GET[nombre];
+    $apellido = $_GET[apellido];
+    $telefono = $_GET[tel];
+
+    echo $nombre." ". $apellido. " ". $telefono
 
 
-echo "</ol>";
+
 ?>
